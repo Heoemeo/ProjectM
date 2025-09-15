@@ -19,11 +19,19 @@
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        />
     </head>
     <body>
         <section><h4 id="Logo">JAAR</h4></section>
 
         <nav class="nav">
+            <form class="search-bar" role="search">
+                <input type="text" placeholder="Sök..." aria-label="Sök" />
+                <button type="submit">&#128269;</button>
+            </form>
             <!-- Hamburger bar JS-->
             <div
                 class="hamburger"
@@ -41,6 +49,10 @@
                 <li><a href="parfym.html">Parfym</a></li>
                 <li><a href="om-oss.html">Om Oss</a></li>
             </ul>
+            <div class="icons">
+                <span class="material-symbols-outlined"> person </span>
+                <span class="material-symbols-outlined"> shopping_bag </span>
+            </div>
         </nav>
         <section id="banner"></section>
         <section id="banner2"></section>
@@ -66,23 +78,24 @@
                 </div>
             </div>
             <div is="Card3" class="card" style="width: 18rem">
-                <img src="assets/lstift.jpg" class="card-img-top" alt="..." />
+                <img src="assets/dior.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title">Läppstift</h5>
+                    <h5 class="card-title">Dior Foundation</h5>
                     <p class="card-text">
-                        Läppstift med lång hållbarhet och intensiv färg.
+                        Foundation som ger en naturlig och jämn finish. Och
+                        innehåller återfuktande ingredienser.
                     </p>
-                    <h5>299kr</h5>
+                    <h5>539kr</h5>
                 </div>
             </div>
             <div id="Card4" class="card" style="width: 18rem">
-                <img src="assets/hboss.png" class="card-img-top" alt="..." />
+                <img src="assets/ysl.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title">Hugo boss</h5>
+                    <h5 class="card-title">YSL Libre</h5>
                     <p class="card-text">
                         Parfym med långvarig doft gjord på naturbaserade ämnen.
                     </p>
-                    <h5>599kr</h5>
+                    <h5>849kr</h5>
                 </div>
             </div>
         </section>
