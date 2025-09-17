@@ -1,3 +1,5 @@
+/* universal stil*/
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -26,7 +28,7 @@ body {
     background: black;
 }
 
-/* Listan*/
+/* Navbar länkar */
 .List {
     list-style: none;
     margin: 0;
@@ -54,11 +56,16 @@ section h4 {
     justify-content: center;
 }
 
+/*banner bild*/
+
 #banner {
     width: 100%;
     height: 30rem;
     background: url('assets/sm9.png') no-repeat center center/cover;
 }
+
+/*footer stil*/
+
 .footer {
     font-family: playfair display;
     background: #fff0f1;
@@ -106,6 +113,8 @@ footer .Footer-produkter {
     padding: 1rem;
     background-color: #fff0f1;
 }
+
+/* ikoner och sökfält stil*/
 .icons {
     display: flex;
     gap: 0.5rem;
@@ -202,10 +211,32 @@ footer .Footer-produkter {
     .search-bar {
         display: flex;
         align-items: center;
-        justify-content: center;
+
         margin-right: 3rem;
     }
+    #Huvudtext h5 {
+        display: flex;
+        justify-content: center;
+        font-family: playfair display;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    #Huvudtext p {
+        display: flex;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #ref {
+        font-style: italic;
+        font-size: 0.5rem;
+    }
 }
+
+/* universal stil för kort och bilder*/
 section .card {
     display: flex;
     flex-direction: column;
@@ -217,6 +248,23 @@ section .card img {
     justify-content: center;
     padding-left: 2rem;
 }
+
+.Produkter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.Produkter .card {
+    flex: 1 1 250px;
+    max-width: 250px;
+    background-color: #f9f9f9;
+    border: none;
+}
+
+/*style för endast stora skärmar*/
 
 @media (min-width: 769px) {
     #banner2 {
@@ -249,5 +297,24 @@ section .card img {
         position: absolute;
         left: 1rem;
         margin: 0;
+    }
+    #Huvudtext h5 {
+        display: flex;
+        justify-content: center;
+        font-family: playfair display;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    #Huvudtext p {
+        display: flex;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        width: 80vh;
+        margin: 0 auto;
+    }
+    #ref {
+        font-style: italic;
+        font-size: 0.3rem;
     }
 }
